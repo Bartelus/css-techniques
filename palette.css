@@ -1,0 +1,15 @@
+html {
+--color-text: #010d04;
+--color-background: #f6fef8;
+--color-primary: #26e94b;
+--color-secondary: #76b1f1;
+--color-accent: #5d6cee;
+}
+
+.background-primary {
+    background-color: var(--color-primary);
+}
+
+.background-secondary {
+    background-color: var(--background-secondary);
+}
