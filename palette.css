@@ -1,15 +1,31 @@
+:root[data-theme="light"] {
+  --text: #010e04;
+  --background: #f6fef8;
+  --primary: #25e949;
+  --secondary: #75b0f0;
+  --accent: #5d6cee;
+}
+:root[data-theme="dark"] {
+  --text: #f1fef4;
+  --background: #010903;
+  --primary: #16da3a;
+  --secondary: #0f4a8a;
+  --accent: #111fa2;
+}
+
 html {
---color-text: #010d04;
---color-background: #f6fef8;
---color-primary: #26e94b;
---color-secondary: #76b1f1;
---color-accent: #5d6cee;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 .background-primary {
-    background-color: var(--color-primary);
+  background-color: var(--primary);
 }
 
 .background-secondary {
-    background-color: var(--background-secondary);
+  background-color: var(--secondary);
+}
+
+.text-primary {
+  color: var(--accent);
 }
