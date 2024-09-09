@@ -37,7 +37,26 @@ idCheck.addEventListener("click")
 function idkontroll() {
 }
 
+
 let alderbekreftelse = createElement("p")
-if (ageVaclue < 18) { 
-    alderbekreftelse.text
+alderbekreftelse.text = ageValue
+
+let denied = true
+
+if (ageValue < 18) {
+    denied = true
+    console.log = ("Du er for liten")
+}
+
+else
+
+{
+    denied = false
+
+    console.log = ("Du er gammel nok!")
+}
+
+
+if (denied = true) {
+    alderbekreftelse.text = ("Du er for liten")
 }
