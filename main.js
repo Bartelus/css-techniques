@@ -37,4 +37,7 @@ idCheck.addEventListener("click")
 function idkontroll() {
 }
 
-if (ageVaclue < 18) 
+let alderbekreftelse = createElement("p")
+if (ageVaclue < 18) { 
+    alderbekreftelse.text
+}
