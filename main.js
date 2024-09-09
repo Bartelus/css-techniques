@@ -32,15 +32,18 @@ let nameCheck = document.getElementById("navn")
 let ageCheck = document.getElementById("alder")
 let ageValue = ageCheck.value
 
+let idCheck = document.getElementById("alder")
 idCheck.addEventListener("click")
 
 function idkontroll() {
 }
 
 
-let alderbekreftelse = createElement("p")
-alderbekreftelse.text = ageValue
+let alderbekreftelse = document.createElement("p")
+alderbekreftelse.textContent = deniedMessage
+output.append(alder)
 
+let deniedMessage = ("Du er for liten")
 let denied = true
 
 if (ageValue < 18) {
@@ -54,9 +57,4 @@ else
     denied = false
 
     console.log = ("Du er gammel nok!")
-}
-
-
-if (denied = true) {
-    alderbekreftelse.text = ("Du er for liten")
 }
