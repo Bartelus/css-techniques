@@ -29,3 +29,9 @@ html {
 .text-primary {
   color: var(--accent);
 }
+
+@media screen and (min-width: 360px) {
+  body {
+    display: flex;
+  }
+}

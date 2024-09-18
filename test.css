@@ -1,0 +1,60 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > header {
+background-color: green;
+}
+
+.content-area {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+}
+.content-area > main {
+background-color: orange;
+
+flex-grow: 1;
+}
+.content-area > aside {
+background-color: deeppink;
+padding: 1rem;
+position: absolute;
+right: 0px;
+}
+
+body > footer {
+background-color: lightskyblue;
+}
+
+
+/* utility class/ måte å bruke flex konseptet
+flere ganger med samme class */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* box styling */
+/* default always active styling */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+/* only active on screens broader than 1000px */
+@media (min-width: 300px) {
+.box {
+    background-color: forestgreen;
+}
+}
+
+@media (min-width: 1000px) {
+    .box {
+        background-color: darkred;
+        width: 200px;
+    }
+    }
