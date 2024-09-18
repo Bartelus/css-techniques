@@ -27,26 +27,32 @@ let modusKnapp = document.getElementById("modus")
 modusKnapp.addEventListener("click", fargemodus)
 
 
-let nameCheck = document.getElementById("navn") 
-
-let ageCheck = document.getElementById("alder")
-let ageValue = ageCheck.value
-
-let idCheck = document.getElementById("alder")
-idCheck.addEventListener("click")
 
 function idkontroll() {
+    
+    
+    let idAlder = document.getElementById("alder")
+    let ageValue = idAlder.value
+
+    if (!validateValue(ageValue)) {
+        return}
+    
+ let wrapper = document.createElement("li")
+  let nameoutput = document.createElement("p")
+  let ageoutput = document.createElement("p")
+  nameoutput.textContent = nameValue
+  ageoutput.textContent = ageValue
+
+  wrapper.append(nameoutput)
+  wrapper.append(ageoutput)
 }
 
+let idCheck = document.getElementById("Commit")
+idCheck.addEventListener("click", idkontroll)
 
-let alderbekreftelse = document.createElement("p")
-alderbekreftelse.textContent = deniedMessage
-output.append(alder)
-
-let deniedMessage = ("Du er for liten")
 let denied = true
 
-if (ageValue < 18) {
+if (idAlder < 18) {
     denied = true
     console.log = ("Du er for liten")
 }
